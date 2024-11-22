@@ -3,6 +3,9 @@ import Navbar from './componentes/Navbar'
 import Hist from './componentes/Hist'
 import About from './componentes/About'
 import Tecnologias from './componentes/Tecnologias'
+import Experiencia from './componentes/Experiencia'
+import Proyectos from './componentes/Proyectos'
+import Contacto from './componentes/Contacto'
 
 
 const App = () => {
@@ -16,6 +19,10 @@ const App = () => {
         <Hist />
         <About />
         <Tecnologias />
+        <Experiencia />
+        <Proyectos />
+        <Contacto />
+
       </div>
 
     </div>
