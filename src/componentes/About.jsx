@@ -1,6 +1,8 @@
 import React from 'react'
 import aboutImg from '../assets/about.jpg'
 import { ABOUT_TEXT } from '../constants'
+import { motion } from 'motion/react'
+
 
 const About = () => {
     return (
@@ -9,17 +11,17 @@ const About = () => {
             </h1>
             <div className='flex flex-wrap'>
 
-                <div className='w-full lg:w-1/2 lg:p-8'>
+                <motion.div whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: -100}} transition={{duration: 0.5}} className='w-full lg:w-1/2 lg:p-8'>
 
                 <div className='flex items-center justify-center'>
                     <img className='rounded-2xl' src={aboutImg} alt="Sobre mi" />
                 </div>
                 
-                </div>
+                </motion.div>
                 
-                <div className='flex justify-center lg:justify-start'>
+                <motion.div whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: 100}} transition={{duration: 0.5}} className='flex justify-center lg:justify-start'>
                     <p>{ABOUT_TEXT}</p>
-                </div>
+                </motion.div>
             
             </div>
         
